@@ -1,0 +1,32 @@
+#logo {
+    text-align: left;
+
+    a {
+        background-color: inherit;
+        @include background-image(linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 300px, rgba(255,255,255,0) 100%));
+    }
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+     color: $talitha-color;
+}
+
+.header {
+    background-image: url('../images/masthead-narrow.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav {
+    background-color: hsla(358, 86, 52, 0.7);
+
+    li {
+	a {
+	    &:hover, &:focus {
+		text-decoration: none;
+                color: #fff;
+	    }
+	}
+
+    }
+}

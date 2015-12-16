@@ -1,0 +1,10 @@
+@import "compass/css3/images";
+@import "compass/css3/transform";
+
+$talitha-color: #ee1d23;
+
+@import "breakpoints/base";
+
+@media only screen and (min-width: 768px) {
+    @import "breakpoints/768up";
+}

@@ -1,0 +1,24 @@
+body {
+    img.size-medium,
+    img.size-thumbnail,
+    img.wp-post-image {
+        @include transform(rotate(-3deg));
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 5px;
+    }
+}
+
+.header {
+    text-align: left;
+
+    a.header-image-link {
+        display: block;
+        background-color: inherit;
+        @include background-image(linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 300px, rgba(255,255,255,0) 100%));
+
+        img {
+            margin: 15px 0 15px 15px;
+        }
+    }
+}
