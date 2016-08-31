@@ -11,4 +11,13 @@ function theme_enqueue_styles() {
 
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
 
+add_filter('tribe_organizer_label_singular', 'change_single_organizer_label' );
+function change_single_organizer_label() {
+    return 'Leader';
+}
+
+add_filter('tribe_organizer_label_plural', 'change_plural_organizer_label' );
+function change_plural_organizer_label() {
+    return 'Leaders';
+}
 ?>
