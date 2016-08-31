@@ -7,6 +7,7 @@ function theme_enqueue_styles() {
                      get_stylesheet_directory_uri() . '/css/style.css',
                      array($parent_style)
     );
+    wp_enqueue_script("pleshey", get_stylesheet_directory_uri() . '/js/pleshey.js');
 }
 
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
