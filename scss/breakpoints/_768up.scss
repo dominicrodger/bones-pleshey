@@ -1,19 +1,28 @@
-.nav {
-    border: 0;
-    ul {
-	background:$black;
-	margin-top:0;
-    }
-    li.current-menu-item,
-    li.current_page_item,
-    li.current_page_ancestor {
-	a {
-	    border-bottom: 3px solid $blue;
-	}
-    }
-    li a {
-	&:hover, &:focus {
-	    border-bottom: 3px solid $blue;
+body {
+    .nav {
+        border: 0;
+        ul {
+	    background:$black;
+	    margin-top:0;
+        }
+
+        li {
+            a {
+                border-bottom: 3px solid $gray;
+            }
+        }
+
+        li.current-menu-item,
+        li.current_page_item,
+        li.current_page_ancestor {
+	    a {
+	        border-bottom: 3px solid $blue;
+	    }
+        }
+        li a {
+	    &:hover, &:focus {
+	        border-bottom: 3px solid $blue;
+            }
         }
     }
 }
