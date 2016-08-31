@@ -1,66 +1,53 @@
-a, a:visited {
-    color: #ee1d23;
-}
+body {
+    .header {
+        background-color: $blue;
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
-    color: $talitha-color;
-}
+        #logo {
+            display: none;
+        }
 
-.header {
-    background-image: url('../images/masthead-narrow.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: inherit;
-    color: inherit;
-
-    a.header-image-link {
-        display: block;
-        background-color: inherit;
-        margin-bottom: 0px;
-        margin-top: 0px;
-
-        @include background-image(linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 300px, rgba(255,255,255,0) 100%));
-
-        img {
-            margin: 15px 0 15px 15px;
+        #inner-header {
+            background-image: url(../images/header.png);
+            position: relative;
+            background-repeat: no-repeat;
+            display: block;
+            padding-top: 132px;
         }
     }
-
-    #logo {
-        text-align: left;
-
-        a {
-            color: inherit;
-            background-color: inherit;
-            @include background-image(linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 300px, rgba(255,255,255,0) 100%));
-        }
+    .nav-wrapper {
+        background-color: $blue;
     }
 
-    nav {
-        background-color: inherit;
+    .nav {
+	background-color: $gray;
+	border-bottom: 0;
+	margin: 0;
 
-        li a {
-            color: #ffffff;
-        }
-    }
-
-}
-
-.nav {
-    background-color: hsla(358, 86, 52, 0.7);
-
-    li {
-	a {
-	    &:hover, &:focus {
+	li {
+	    a {
+		display: block;
+		color: $black;
 		text-decoration: none;
-                color: #fff;
+		padding: 0.75em;
+
+		&:hover, &:focus {
+                    color: $white;
+                    background-color: $blue;
+                    text-decoration: none;
+		}
 	    }
-	}
-
+        }
     }
-}
 
-.footer {
-    background-color: #323944;
-    color: inherit;
+    &.home article header.article-header {
+        display: block;
+    }
+
+    a, a:visited {
+	color: $link-color;
+
+	&:hover, &:focus {
+	    color: $link-hover;
+	}
+    }
 }

@@ -1,14 +1,19 @@
-body {
-    img.size-medium,
-    img.size-thumbnail,
-    img.wp-post-image {
-        @include transform(rotate(-3deg));
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        padding: 5px;
+.nav {
+    border: 0;
+    ul {
+	background:$black;
+	margin-top:0;
     }
-}
-
-.header {
-    text-align: left;
+    li.current-menu-item,
+    li.current_page_item,
+    li.current_page_ancestor {
+	a {
+	    border-bottom: 3px solid $blue;
+	}
+    }
+    li a {
+	&:hover, &:focus {
+	    border-bottom: 3px solid $blue;
+        }
+    }
 }
