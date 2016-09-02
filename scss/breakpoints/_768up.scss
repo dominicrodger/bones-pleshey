@@ -9,6 +9,11 @@ body {
         li {
             a {
                 border-bottom: 3px solid $gray;
+
+	        &:hover, &:focus {
+	            border-bottom: 3px solid $blue;
+                }
+            }
             }
         }
 
@@ -18,11 +23,6 @@ body {
 	    a {
 	        border-bottom: 3px solid $blue;
 	    }
-        }
-        li a {
-	    &:hover, &:focus {
-	        border-bottom: 3px solid $blue;
-            }
         }
     }
 
