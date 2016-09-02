@@ -149,6 +149,7 @@ body.tribe-theme-pleshey {
             width: auto;
             display: inline;
             margin-bottom: 2em;
+            margin-right: 0;
 
             a {
                 color: $meta-gray;
@@ -178,6 +179,12 @@ body.tribe-theme-pleshey {
         .tribe-events-nav-next a {
             display: inline;
         }
+    }
+}
+
+#tribe-events-footer {
+    .tribe-events-sub-nav {
+        margin-top: 2em;
     }
 }
 
