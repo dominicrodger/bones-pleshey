@@ -25,4 +25,17 @@ body {
             }
         }
     }
+
+    div.widget_pages {
+        ul.children {
+            display: none;
+        }
+
+        li.current_page_ancestor,
+        li.current_page_item {
+            ul.children {
+                display: inherit;
+            }
+        }
+    }
 }
