@@ -3,11 +3,26 @@ body {
         background-color: $blue;
 
         #logo {
-            display: none;
+            position: absolute;
+            top: 35px;
+            left: 0;
+            background-color: rgba(48,96,204, 0.7);
+            background-position: right;
+            padding: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            margin: 0;
+            line-height: 1;
+            font-size: 2.2em;
+            
+            a {
+                margin: 0;
+                color: #fff;
+            }
         }
 
         #inner-header {
-            background-image: url(../images/header.png);
+            background-image: url(../images/header.jpg);
             position: relative;
             background-repeat: no-repeat;
             display: block;
