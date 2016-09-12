@@ -13,8 +13,8 @@ body {
             border-bottom-right-radius: 10px;
             margin: 0;
             line-height: 1;
-            font-size: 2.2em;
-            
+            font-size: 1.7em;
+
             a {
                 margin: 0;
                 color: #fff;
@@ -66,8 +66,14 @@ body {
 	}
     }
 
-    .article-header .byline {
-        display: none;
+    .article-header {
+        .byline {
+            display: none;
+        }
+
+        h1 {
+            font-size: 2.2em;
+        }
     }
 
     p.walk-softly {
